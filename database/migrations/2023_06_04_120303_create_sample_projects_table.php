@@ -16,11 +16,11 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('main_img');
-            $table->string('details_client');
-            $table->string('details_date');
-            $table->string('details_url');
-            $table->string('details_title');
-            $table->text('details_txt');
+            $table->string('details_client')->nullable();
+            $table->string('details_date')->nullable();
+            $table->string('details_url')->nullable();
+            $table->string('details_title')->nullable();
+            $table->text('details_txt')->nullable();
             $table->timestamps();
         });
     }

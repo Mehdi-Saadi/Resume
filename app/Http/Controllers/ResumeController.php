@@ -20,6 +20,6 @@ class ResumeController extends Controller
 
     public function details($id)
     {
-
+        return view('protfolio-details');
     }
 }

@@ -19,6 +19,16 @@ use App\Http\Controllers\ResumeController;
 Route::get('/', [ResumeController::class, 'index'])->name('index');
 Route::get('/details/{id}', [ResumeController::class, 'details'])->name('project_details');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
-Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+Route::prefix('/admin')->group(function () {
+    Route::get('/', [AdminController::class, 'index'])->name('admin');
+    Route::get('/resume', [AdminController::class, 'resume'])->name('resumePage');
+    Route::post('/resume/update', [AdminController::class, 'updateResume'])->name('resumeUpdate');
+    Route::get('/skill', [AdminController::class, 'skill'])->name('skillPage');
+    Route::post('/skill/store', [AdminController::class, 'storeSkills'])->name('skillStore');
+    Route::post('/skill/update', [AdminController::class, 'updateSkills'])->name('skillUpdate');
+    Route::delete('/skill/delete', [AdminController::class, 'deleteSkills'])->name('skillDelete');
+    Route::get('/sample', [AdminController::class, 'sample'])->name('samplePage');
+
+});

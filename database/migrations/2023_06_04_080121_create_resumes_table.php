@@ -28,14 +28,13 @@ return new class extends Migration
             $table->string('email');
             $table->boolean('available');
             $table->string('location');
-            $table->text('additional_about');
-            $table->text('facts_txt');
+            $table->text('facts_txt')->nullable();
             $table->integer('clients');
             $table->integer('projects_done');
             $table->integer('awards');
-            $table->text('skills-txt');
-            $table->text('resume-txt');
-            $table->text('last_words');
+            $table->text('skills_txt')->nullable();
+            $table->text('resume_txt')->nullable();
+            $table->text('last_words')->nullable();
             $table->timestamps();
         });
     }
