@@ -112,11 +112,11 @@
                                             <textarea name="last_words" id="last_words" class="form-control">{{ $resume->last_words }}</textarea>
                                         </div>
                                         <div class="row mb-4">
-                                            <label for="background_img" class="form-label">Background Image:</label>
+                                            <label for="background_img" class="form-label">Background Image: (can be empty)</label>
                                             <input type="file" name="background_img" id="background_img" class="form-control">
                                         </div>
                                         <div class="row mb-4">
-                                            <label for="profile_img" class="form-label">Profile Image:</label>
+                                            <label for="profile_img" class="form-label">Profile Image: (can be empty)</label>
                                             <input type="file" name="profile_img" id="profile_img" class="form-control">
                                         </div>
 

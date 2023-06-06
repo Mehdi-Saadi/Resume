@@ -17,6 +17,8 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="row mb-3">
                         <div class="col-md mb-3">
                             <div class="card">
                                 <a href="{{ route('skillPage') }}" class="btn">
@@ -26,6 +28,8 @@
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="row mb-3">
                         <div class="col-md mb-3">
                             <div class="card">
                                 <a href="{{ route('samplePage') }}" class="btn">

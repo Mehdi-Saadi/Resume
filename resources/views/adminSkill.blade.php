@@ -22,7 +22,7 @@
                                     @endif
                                 </div>
 
-                                <h3 class="mx-5 mt-5">Add a new skill</h3>
+                                <h3 class="mx-5 mt-5">Add new skill</h3>
 
                                 <!-- add new skill -->
                                 <form action="{{ route('skillStore') }}" method="post">
